@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/s.css"/>
+    <style>
+        body {
+            font: 14px sans-serif;
+            margin:auto; 
+            margin-top: 80px; /* Adjusted margin top */
+            width:500px; 
+            background-color: blueviolet;
+            color: black;
+        }
+        .wrapper {
+            border-style: solid;
+            border-color: blue;
+            border-radius: 30px;
+            padding: 20px;
+            background-color: white;
+        }
+        .header {
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        Career Solutions
+    </div>
+
+    <div class="wrapper">
+        <h2>Login</h2>
+        <p>Please fill in your credentials to login.</p>
+        <form id="loginForm">
+            <div class="form-group">
+                <label><b>Username</b></label>
+                <input type="text" id="username" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label><b>Password</b></label>
+                <input type="password" id="password" name="password" class="form-control">
+            </div>
+            <!-- Replace input type submit with button -->
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+            </div>
+            <p style="font-size: 16px;">Don't have an account? <a href="signup.html" style="color: blue;">Sign up now</a>.</p>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            // You can add login logic here
+            // For now, just redirect to the instructions page
+            window.location.href = "instructions.html";
+        }
+       
+    </script>
+    <script src="//code.tidio.co/enmthii8gblntdlntdxp02t0bdhmtlfu.js" async></script>
+    <!-- <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "tHi-yLRr7Sw88KGEG2fRk",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="tHi-yLRr7Sw88KGEG2fRk"
+        domain="www.chatbase.co"
+        defer>
+        </script> -->
+     
+</body>
+</html>

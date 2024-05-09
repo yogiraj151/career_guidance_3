@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Test</title>
+    <script src="script.js"></script>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .question label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit button:hover {
+            background-color: #0056b3;
+        }
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Career Guidance Test</h1>
+        <form id="careerGuidanceForm">
+            <!-- Software Engineer questions -->
+            <div class="question">
+                <p>1. What aspect of software engineering interests you the most?</p>
+                <label>
+                    <input type="radio" name="q1" value="4"> Developing new algorithms and logic
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="3"> Designing user interfaces and experiences
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="2"> Testing and debugging code for efficiency
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="1"> Collaborating with a team on large projects
+                </label><br>
+            </div>
+            <div class="question">
+                <p>2. Which programming language do you prefer working with?</p>
+                <label>
+                    <input type="radio" name="q2" value="4"> Python
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="3"> JavaScript
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="2"> C++
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="1"> Java
+                </label><br>
+            </div>
+            <div class="question">
+                <p>3. How do you approach learning new technologies?</p>
+                <label>
+                    <input type="radio" name="q3" value="4"> Enthusiastically, always eager to learn
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="3"> Methodically, with a structured approach
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="2"> Experimentally, by trying things out
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="1"> Reluctantly, only when necessary
+                </label><br>
+            </div>
+            <div class="question">
+                <p>4. What kind of software projects do you find most appealing?</p>
+                <label>
+                    <input type="radio" name="q4" value="4"> Mobile applications
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="3"> Web development
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="2"> Artificial intelligence and machine learning
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="1"> Game development
+                </label><br>
+            </div>
+            <div class="question">
+                <p>5. How important is continuous learning and skill improvement to you?</p>
+                <label>
+                    <input type="radio" name="q5" value="4"> Very important, always seeking new challenges
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="3"> Somewhat important, but not a top priority
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="2"> Not important, I prefer sticking to what I know
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="1"> I'm not sure/I haven't thought about it
+                </label><br>
+            </div>
+            <div class="question">
+                <p>6. How do you handle tight project deadlines in software development?</p>
+                <label>
+                    <input type="radio" name="q6" value="4"> Prioritize tasks and work efficiently
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="3"> Seek help from team members
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="2"> Get stressed but manage to meet deadlines
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="1"> Struggle to meet deadlines
+                </label><br>
+            </div>
+            <div class="question">
+                <p>7. Are you interested in exploring different areas of software development (e.g., front-end, back-end, databases)?</p>
+                <label>
+                    <input type="radio" name="q7" value="4"> Yes, I enjoy working on diverse projects
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="3"> Maybe, if it aligns with my career goals
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="2"> No, I prefer specializing in one area
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="1"> I'm not sure/I haven't decided yet
+                </label><br>
+            </div>
+            
+            <div class="submit">
+                <button type="button" onclick="calculateScore()">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        let maxi = -1;
+        let ans = "";
+        function calculateScore() {
+            var form = document.getElementById('careerGuidanceForm');
+            var totalScore = 0;
+            for (var i = 1; i <= 7; i++) {
+                var selectedOption = form.elements['q' + i];
+                for (var j = 0; j < selectedOption.length; j++) {
+                    if (selectedOption[j].checked) {
+                        totalScore += parseInt(selectedOption[j].value);
+                        break;
+                    }
+                }
+            }
+            if(totalScore > maxi) {
+                maxi = totalScore;
+                ans = "software";
+            }
+            localStorage.setItem('maxi', maxi);
+            localStorage.setItem('ans', ans);
+            window.location.href = "medical.html";
+        }
+    </script>
+      <!-- <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "tHi-yLRr7Sw88KGEG2fRk",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="tHi-yLRr7Sw88KGEG2fRk"
+        domain="www.chatbase.co"
+        defer>
+        </script> -->
+    </body>
+    </html>

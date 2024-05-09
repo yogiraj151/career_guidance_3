@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .question label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Career Guidance Test</h1>
+    <form id="careerGuidanceForm">
+        <!-- Finance/accounting-related questions -->
+        <div class="question">
+            <p>1. What aspect of finance/accounting interests you the most?</p>
+            <label>
+                <input type="radio" name="q1" value="a"> Financial analysis and forecasting
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="b"> Tax planning and compliance
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="c"> Budgeting and cost management
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="d"> Auditing and financial reporting
+            </label><br>
+        </div>
+        <div class="question">
+            <p>2. Which financial area do you prefer working in?</p>
+            <label>
+                <input type="radio" name="q2" value="a"> Corporate finance
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="b"> Investment banking
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="c"> Personal finance and wealth management
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="d"> Other (please specify)
+            </label><br>
+        </div>
+        <div class="question">
+            <p>3. How do you approach financial data analysis and interpretation?</p>
+            <label>
+                <input type="radio" name="q3" value="a"> Analyze data using statistical tools and models
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="b"> Collaborate with financial experts for insights
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="c"> Use intuition and experience for decision-making
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="d"> I'm not sure/I haven't thought about it
+            </label><br>
+        </div>
+        <div class="question">
+            <p>4. Are you interested in financial planning and advising clients?</p>
+            <label>
+                <input type="radio" name="q4" value="a"> Yes, I enjoy helping clients achieve their financial goals
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="b"> Maybe, if it's part of my job responsibilities
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="c"> No, I prefer focusing on financial analysis
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="d"> I'm not sure/I haven't explored financial advising much
+            </label><br>
+        </div>
+        <div class="question">
+            <p>5. How do you handle complex financial regulations and compliance?</p>
+            <label>
+                <input type="radio" name="q5" value="a"> Stay updated with regulations and ensure compliance
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="b"> Seek guidance from legal and compliance teams
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="c"> Manage with basic knowledge, rely on experts for details
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="d"> I'm not sure/I haven't encountered complex regulations
+            </label><br>
+        </div>
+        <div class="question">
+            <p>6. Are you interested in pursuing professional certifications (CPA, CFA, etc.) in finance/accounting?</p>
+            <label>
+                <input type="radio" name="q6" value="a"> Yes, I plan to pursue relevant certifications
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="b"> Maybe, if it enhances my career prospects
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="c"> No, I prefer gaining experience through work
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="d"> I'm not sure/I haven't decided yet
+            </label><br>
+        </div>
+        <div class="question">
+            <p>7. How do you prioritize and manage financial tasks and projects?</p>
+            <label>
+                <input type="radio" name="q7" value="a"> Use financial planning tools and set priorities
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="b"> Delegate tasks to financial team members
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="c"> Manage tasks as they come, without prioritizing
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="d"> I'm not sure/I haven't managed financial projects before
+            </label><br>
+        </div>
+        <div class="submit">
+            <button type="button" onclick="calculateScore()">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function calculateScore() {
+        let maxi = localStorage.getItem('maxi');
+        let ans = localStorage.getItem('ans');
+        var form = document.getElementById('careerGuidanceForm');
+        var totalScore = 0;
+        for (var i = 1; i <= 7; i++) {
+            var selectedOption = form.elements['q' + i];
+            for (var j = 0; j < selectedOption.length; j++) {
+                if (selectedOption[j].checked) {
+                    totalScore += parseInt(selectedOption[j].value);
+                    break;
+                }
+            }
+        }
+        if(totalScore > maxi) {
+            maxi = totalScore;
+            ans = "Financial Analyst";
+        }
+        localStorage.setItem('maxi', maxi);
+        localStorage.setItem('ans', ans);
+        window.location.href = "engineer.html";
+    }
+</script>
+<!-- <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "tHi-yLRr7Sw88KGEG2fRk",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="tHi-yLRr7Sw88KGEG2fRk"
+    domain="www.chatbase.co"
+    defer>
+    </script> -->
+</body>
+</html>

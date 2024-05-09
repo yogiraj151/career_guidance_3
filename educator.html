@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Test</title>
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .question label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Guidance Test</h1>
+        <form id="careerGuidanceForm">
+            <!-- Education-related questions -->
+            <div class="question">
+                <p>1. What motivates you to pursue a career in education?</p>
+                <label>
+                    <input type="radio" name="q1" value="4"> Inspiring and shaping young minds
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="3"> Sharing knowledge and fostering learning
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="2"> Making a positive impact on society through education
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="1"> Stability and job security
+                </label><br>
+            </div>
+            <div class="question">
+                <p>2. Which subject or grade level do you prefer teaching?</p>
+                <label>
+                    <input type="radio" name="q2" value="4"> Math or Science
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="3"> Language Arts or Humanities
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="2"> Social Studies or History
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="1"> Other (please specify)
+                </label><br>
+            </div>
+            <div class="question">
+                <p>3. How do you approach classroom management and student engagement?</p>
+                <label>
+                    <input type="radio" name="q3" value="4"> Establish clear expectations and interactive lessons
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="3"> Adapt teaching methods to individual student needs
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="2"> Maintain discipline through strict rules and consequences
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="1"> Avoid classroom management issues altogether
+                </label><br>
+            </div>
+            <div class="question">
+                <p>4. Are you passionate about integrating technology into education?</p>
+                <label>
+                    <input type="radio" name="q4" value="4"> Yes, I see it as a valuable tool for learning
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="3"> Maybe, if it enhances the learning experience
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="2"> No, I prefer traditional teaching methods
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="1"> I'm not sure/I haven't explored technology in education
+                </label><br>
+            </div>
+            <div class="question">
+                <p>5. How do you handle challenges and setbacks in teaching?</p>
+                <label>
+                    <input type="radio" name="q5" value="4"> Learn from mistakes and continuously improve
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="3"> Seek support from fellow educators and mentors
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="2"> Get overwhelmed but find solutions eventually
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="1"> Give up easily when faced with challenges
+                </label><br>
+            </div>
+            <div class="question">
+                <p>6. Are you interested in pursuing further education or certifications in teaching?</p>
+                <label>
+                    <input type="radio" name="q6" value="4"> Yes, I believe in lifelong learning and professional development
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="3"> Maybe, if it benefits my teaching skills
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="2"> No, I prefer gaining experience through teaching
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="1"> I'm not sure/I haven't decided yet
+                </label><br>
+            </div>
+            <div class="question">
+                <p>7. How do you measure success as an educator?</p>
+                <label>
+                    <input type="radio" name="q7" value="4"> By seeing students' growth and achievements
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="3"> By positive feedback from students and parents
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="2"> By meeting educational standards and benchmarks
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="1"> I'm not sure/I haven't thought about it
+                </label><br>
+            </div>
+            <div class="submit">
+                <button type="button" onclick="calculateScore()">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        let maxi = localStorage.getItem('maxi');
+        let ans = localStorage.getItem('ans');
+        function calculateScore() {
+            var form = document.getElementById('careerGuidanceForm');
+            var totalScore = 0;
+            for (var i = 1; i <= 7; i++) {
+                var selectedOption = form.elements['q' + i];
+                for (var j = 0; j < selectedOption.length; j++) {
+                    if (selectedOption[j].checked) {
+                        totalScore += parseInt(selectedOption[j].value);
+                        break;
+                    }
+                }
+            }
+            if(maxi < totalScore) {
+                maxi = totalScore;
+                ans = "Educator";
+            }
+            localStorage.setItem('maxi', maxi);
+             localStorage.setItem('ans', ans);
+            window.location.href = "counsellor.html";
+        }
+    </script>
+      <!-- <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "tHi-yLRr7Sw88KGEG2fRk",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="tHi-yLRr7Sw88KGEG2fRk"
+        domain="www.chatbase.co"
+        defer>
+        </script> -->
+</body>
+</html>

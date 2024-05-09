@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .instruction {
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations!</h1>
+        <p>You have successfully completed the test. Your journey towards a bright career begins now.</p>
+        <p>Remember, success is not final, failure is not fatal: It is the courage to continue that counts.</p>
+        <p>Believe in yourself, keep learning, and never give up.</p>
+        <p class="instruction">Please click on the "Continue" button to see  which will be a better career option for u in future</p>
+        <button onclick="redirectToCareerPage()">Continue</button>
+    </div>
+
+    <script>
+                let maxi = localStorage.getItem('maxi');
+                let ans = localStorage.getItem('ans');
+      
+        function redirectToCareerPage() {
+            switch(ans) {
+                case "software" : 
+                window.location.href = "https://www.geeksforgeeks.org/how-to-become-a-software-engineer/";
+                break;
+                case "medical" : 
+                window.location.href = "https://www.careerguide.com/career/online-career-counselling/counseling-for-10th/6-steps-become-a-doctor-after-class-10th";
+                break;
+                case "marketing" : 
+                window.location.href = "https://www.cellainc.com/insights/blog/mastering-the-art-of-marketing-a-roadmap-to-becoming-a-marketing-expert/";
+                break;
+                case "Lawyer" : 
+                window.location.href = "https://rightdirectionacademy.com/course.php?t=RoadmapForBecomingALawyer";
+                break;
+                case "Graphic Designer" : 
+                window.location.href = "https://brainstation.io/career-guides/how-to-become-a-graphic-designer";
+                break;
+                case "Financial Analyst" : 
+                window.location.href = "https://www.investopedia.com/articles/financial-advisors/121815/financial-analyst-career-path-qualifications.asp#:~:text=How%20Do%20You%20Pursue%20a,an%20MBA%20or%20CFA%20qualification";
+                break;
+                case "Engineer" : 
+                window.location.href = "https://cleverharvey.com/how-to-become-an-engineer/";
+                break;
+                case "Educator" : 
+                window.location.href = "https://teacheroo.io/blog/roadmap-your-teaching-career/";
+                break;
+                case "Counselor" : 
+                window.location.href = "https://in.indeed.com/career-advice/finding-a-job/how-to-become-counselor";
+                break;
+                case "IAS" : 
+                window.location.href = "https://pwonlyias.com/guide-to-become-an-ias-officer/#:~:text=It%20comprises%20two%20papers%3A%20General,language%20comprehension%2C%20and%20optional%20subjects";
+                break;
+
+            }
+        }
+    </script>
+     
+             <script src="//code.tidio.co/enmthii8gblntdlntdxp02t0bdhmtlfu.js" async></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .question label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Career Guidance Test</h1>
+    <form id="careerGuidanceForm">
+        <!-- Law-related questions -->
+        <div class="question">
+            <p>1. What aspect of law or legal practice interests you the most?</p>
+            <label>
+                <input type="radio" name="q1" value="a"> Litigation and courtroom advocacy
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="b"> Legal research and analysis
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="c"> Negotiation and conflict resolution
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="d"> Providing legal counsel and advice
+            </label><br>
+        </div>
+        <div class="question">
+            <p>2. Which area of law do you find most intriguing?</p>
+            <label>
+                <input type="radio" name="q2" value="a"> Criminal law
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="b"> Corporate law
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="c"> Family law
+            </label><br>
+            <label>
+                <input type="radio" name="q2" value="d"> Other (please specify)
+            </label><br>
+        </div>
+        <div class="question">
+            <p>3. How do you approach legal cases and client representation?</p>
+            <label>
+                <input type="radio" name="q3" value="a"> Thoroughly research case law and precedents
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="b"> Strategize legal arguments and defense tactics
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="c"> Collaborate with clients to understand their needs
+            </label><br>
+            <label>
+                <input type="radio" name="q3" value="d"> I'm not sure/I haven't thought about it
+            </label><br>
+        </div>
+        <div class="question">
+            <p>4. Are you interested in alternative dispute resolution methods (mediation, arbitration)?</p>
+            <label>
+                <input type="radio" name="q4" value="a"> Yes, I see value in resolving disputes outside of court
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="b"> Maybe, if it's beneficial for specific cases
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="c"> No, I prefer traditional litigation methods
+            </label><br>
+            <label>
+                <input type="radio" name="q4" value="d"> I'm not sure/I haven't explored alternative methods much
+            </label><br>
+        </div>
+        <div class="question">
+            <p>5. How do you handle high-pressure legal situations?</p>
+            <label>
+                <input type="radio" name="q5" value="a"> Stay calm and focused, assess all options
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="b"> Seek advice from senior attorneys or mentors
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="c"> Get stressed but manage to handle the situation
+            </label><br>
+            <label>
+                <input type="radio" name="q5" value="d"> Avoid high-pressure situations as much as possible
+            </label><br>
+        </div>
+        <div class="question">
+            <p>6. Are you interested in pursuing specialization or advanced studies in law?</p>
+            <label>
+                <input type="radio" name="q6" value="a"> Yes, I plan to specialize in a specific legal area
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="b"> Maybe, if it enhances my legal career prospects
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="c"> No, I prefer gaining experience through practice
+            </label><br>
+            <label>
+                <input type="radio" name="q6" value="d"> I'm not sure/I haven't decided yet
+            </label><br>
+        </div>
+        <div class="question">
+            <p>7. How important is ethics and integrity in legal practice?</p>
+            <label>
+                <input type="radio" name="q7" value="a"> Very important, ethics guide my legal decisions
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="b"> Somewhat important, but legal strategy matters more
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="c"> Not important, I focus on winning cases
+            </label><br>
+            <label>
+                <input type="radio" name="q7" value="d"> I'm not sure/I haven't thought about it
+            </label><br>
+        </div>
+        <div class="submit">
+            <button type="button" onclick="calculateScore()">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    let maxi = localStorage.getItem('maxi');
+    let ans = localStorage.getItem('ans');
+    function calculateScore() {
+        var form = document.getElementById('careerGuidanceForm');
+        var totalScore = 0;
+        for (var i = 1; i <= 7; i++) {
+            var selectedOption = form.elements['q' + i];
+            for (var j = 0; j < selectedOption.length; j++) {
+                if (selectedOption[j].checked) {
+                    totalScore += parseInt(selectedOption[j].value);
+                    break;
+                }
+            }
+        }
+        if(totalScore > maxi) {
+            maxi = totalScore;
+            ans = "Lawyer";
+        }
+        localStorage.setItem('maxi', maxi);
+         localStorage.setItem('ans', ans);
+        window.location.href = "graphic designer.html";
+    }
+</script>
+<!-- <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "tHi-yLRr7Sw88KGEG2fRk",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="tHi-yLRr7Sw88KGEG2fRk"
+    domain="www.chatbase.co"
+    defer>
+    </script> -->
+</body>
+</html>

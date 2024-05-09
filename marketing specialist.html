@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Test</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question p {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .question label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .submit {
+            text-align: center;
+        }
+
+        .submit button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Career Guidance Test</h1>
+        <form id="careerGuidanceForm">
+            <!-- Marketing and advertising-related questions -->
+            <div class="question">
+                <p>1. What aspect of marketing/advertising interests you the most?</p>
+                <label>
+                    <input type="radio" name="q1" value="4"> Creating compelling campaigns and storytelling
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="3"> Analyzing market trends and consumer behavior
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="2"> Implementing digital marketing strategies
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="1"> Collaborating with clients and creative teams
+                </label><br>
+            </div>
+            <div class="question">
+                <p>2. Which marketing channel do you find most effective?</p>
+                <label>
+                    <input type="radio" name="q2" value="4"> Social media marketing
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="3"> Content marketing
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="2"> Email marketing
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="1"> Traditional advertising (TV, radio, print)
+                </label><br>
+            </div>
+            <div class="question">
+                <p>3. How do you approach target audience segmentation and persona development?</p>
+                <label>
+                    <input type="radio" name="q3" value="4"> Conduct research and data analysis
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="3"> Use creativity and intuition
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="2"> Collaborate with market research teams
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="1"> I'm not sure/I haven't thought about it
+                </label><br>
+            </div>
+            <div class="question">
+                <p>4. Are you interested in branding and brand management?</p>
+                <label>
+                    <input type="radio" name="q4" value="4"> Yes, I enjoy building and maintaining brand identity
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="3"> Maybe, if it's relevant to my role
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="2"> No, I prefer focusing on other aspects of marketing
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="1"> I'm not sure/I haven't explored branding much
+                </label><br>
+            </div>
+            <div class="question">
+                <p>5. How do you measure the success of marketing campaigns?</p>
+                <label>
+                    <input type="radio" name="q5" value="4"> By ROI and conversion rates
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="3"> By brand awareness and engagement metrics
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="2"> By customer feedback and satisfaction
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="1"> I'm not sure/I haven't thought about it
+                </label><br>
+            </div>
+            <div class="question">
+                <p>6. How important is creativity in marketing/advertising?</p>
+                <label>
+                    <input type="radio" name="q6" value="4"> Very important, creativity drives effective campaigns
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="3"> Somewhat important, but data-driven strategies matter more
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="2"> Not important, I prefer following established marketing tactics
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="1"> I'm not sure/I haven't thought about it
+                </label><br>
+            </div>
+            <div class="question">
+                <p>7. How do you stay updated with marketing trends and innovations?</p>
+                <label>
+                    <input type="radio" name="q7" value="4"> Attend industry conferences and seminars
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="3"> Follow marketing blogs and thought leaders
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="2"> Take online courses and certifications
+                </label><br>
+                <label>
+                    <input type="radio" name="q7" value="1"> I'm not sure/I haven't explored marketing trends much
+                </label><br>
+            </div>
+            <div class="submit">
+                <button type="button" onclick="calculateScore()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+         let maxi = localStorage.getItem('maxi');
+         let ans = localStorage.getItem('ans');
+        function calculateScore() {
+            var form = document.getElementById('careerGuidanceForm');
+            var totalScore = 0;
+            for (var i = 1; i <= 7; i++) {
+                var selectedOption = form.elements['q' + i];
+                for (var j = 0; j < selectedOption.length; j++) {
+                    if (selectedOption[j].checked) {
+                        totalScore += parseInt(selectedOption[j].value);
+                        break;
+                    }
+                }
+            }
+            if(totalScore > maxi) {
+                maxi = totalScore;
+                ans = "marketing";
+            }
+            localStorage.setItem('maxi', maxi);
+            localStorage.setItem('ans', ans);
+            window.location.href = "lawyer.html";
+        }
+    </script>
+      <!-- <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "tHi-yLRr7Sw88KGEG2fRk",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="tHi-yLRr7Sw88KGEG2fRk"
+        domain="www.chatbase.co"
+        defer>
+        </script> -->
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Career Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .welcome-container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .benefit-box {
+            flex-basis: calc(50% - 20px);
+            height: 140px;
+            background-color: rgba(255, 255, 255, 0.2);
+            /* padding: 20px; */
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .benefit-box h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .benefit-box p {
+            font-size: 16px;
+        }
+
+        .proceed-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+
+        .proceed-button:hover {
+            background-color: #0056b3;
+        }
+
+        .note {
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #000;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Career Solutions!</h1>
+        <p>Discover Your Career Path</p>
+        <div class="benefits">
+            <div class="benefit-box">
+                <h3>Self-Discovery</h3>
+                <p>Identify your strengths and weaknesses.</p>
+            </div>
+            <div class="benefit-box">
+                <h3>Exploration</h3>
+                <p>Explore various career options.</p>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="benefit-box">
+                <h3>Guidance</h3>
+                <p>Find the best-fit career for you.</p>
+            </div>
+            <div class="benefit-box">
+                <h3>Insights</h3>
+                <p>Our comprehensive test will provide you with valuable insights to help shape your future career.</p>
+            </div>
+        </div>
+        <a href="signup.html" class="proceed-button">Proceed</a>
+        <p class="note">Note : After completing the test, you'll be directed to a page with information about the career path most suitable for you.</p>
+    </div>
+</body>
+</html>
